@@ -1,61 +1,34 @@
 {
-  "name": "@south-paw/discord-music-bot",
-  "version": "0.0.1",
-  "description": "A music bot for Discord servers, self-hosted, easy to use and extendable.",
-  "keywords": [
-    "discord",
-    "bot",
-    "music",
-    "musicbot",
-    "radio"
-  ],
-  "homepage": "https://github.com/South-Paw/discord-music-bot",
-  "bugs": "https://github.com/South-Paw/discord-music-bot/issues",
-  "license": "GPL-3.0",
-  "author": {
-    "name": "Alex Gabites",
-    "email": "hello@southpaw.co.nz",
-    "url": "http://southpaw.co.nz/"
+  "name": "musicbot",
+  "version": "1.0.0",
+  "description": "A simple node.js discord music bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": [
-    "bin",
-    "src"
-  ],
-  "bin": {
-    "discord-music-bot": "./bin/cli.js"
-  },
-  "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/South-Paw/discord-music-bot"
+    "url": "git+ssh://git@github.com/developerCodex/musicbot.git"
   },
-  "scripts": {
-    "lint": "eslint .",
-    "prepublishOnly": "yarn lint && yarn test",
-    "test": "jest"
+  "keywords": [
+    "music",
+    "bot",
+    "discord",
+    "node.js",
+    "npm",
+    "ytdl"
+  ],
+  "author": "developerCodex, Joseph Banks, ZelAk312, Hackzilla, ASIANBOI",
+  "license": "I put de license in de folder",
+  "bugs": {
+    "url": "https://github.com/developerCodex/musicbot/issues"
   },
+  "homepage": "https://github.com/developerCodex/musicbot#readme",
   "dependencies": {
-    "dateformat": "^3.0.3",
-    "deepmerge": "^3.0.0",
-    "discord.js": "^11.4.2",
-    "meow": "^5.0.0",
-    "string-format": "^2.0.0"
-  },
-  "devDependencies": {
-    "coveralls": "^3.0.2",
-    "eslint": "^5.11.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "jest": "^23.6.0",
-    "prettier": "^1.15.3"
-  },
-  "engines": {
-    "node": ">=10.15.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "discord.js": "hydrabolt/discord.js#indev-old",
+    "youtube-search": "^1.0.6",
+    "mathjs": "^3.5.3",
+    "ytdl-core": "^0.7.17",
+    "express":"^4"
   }
 }
