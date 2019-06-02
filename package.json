@@ -1,34 +1,27 @@
 {
-  "name": "musicbot",
+  "name": "discordjs",
   "version": "1.0.0",
-  "description": "A simple node.js discord music bot",
+  "description": "discord bot made with javascript",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
+    "pretest": "eslint --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/developerCodex/musicbot.git"
-  },
-  "keywords": [
-    "music",
-    "bot",
-    "discord",
-    "node.js",
-    "npm",
-    "ytdl"
-  ],
-  "author": "developerCodex, Joseph Banks, ZelAk312, Hackzilla, ASIANBOI",
-  "license": "I put de license in de folder",
-  "bugs": {
-    "url": "https://github.com/developerCodex/musicbot/issues"
-  },
-  "homepage": "https://github.com/developerCodex/musicbot#readme",
+  "author": "nir",
+  "license": "ISC",
   "dependencies": {
-    "discord.js": "hydrabolt/discord.js#indev-old",
-    "youtube-search": "^1.0.6",
-    "mathjs": "^3.5.3",
-    "ytdl-core": "^0.7.17",
-    "express":"^4"
+    "discord.js": "github:discordjs/discord.js#master",
+    "discord.js-commando": "github:discordjs/Commando",
+    "ffmpeg-static": "^2.4.0",
+    "node-opus": "^0.3.1",
+    "simple-youtube-api": "^5.1.1",
+    "ytdl-core": "^0.27.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.0"
   }
 }
